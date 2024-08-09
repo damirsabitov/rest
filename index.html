@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/new_reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>JELELABS - Лаборатория IT решений</title>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="nav__container">
+				<div class="nav__start">
+					<a href="#" class="nav__logo">
+						<img src="images/logo.svg" alt="logo" />
+						<div class="nav__logo__text">
+							<p class="nav__logo__title">JELELABS</p>
+							<p class="nav__logo__description">лаборатория it решений</p>
+						</div>
+					</a>
+				</div>
+				<div class="nav__end">
+					<button class="menu-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="nav__list mobile">
+						<li><a href="markting.html" class="nav__link">Маркетинг</a></li>
+						<li><a href="sites.html" class="nav__link">Сайты</a></li>
+						<li><a href="apps.html" class="nav__link">Приложения</a></li>
+						<li><a href="aso.html" class="nav__link">ASO</a></li>
+						<li><a href="ai.html" class="nav__link">AI</a></li>
+						<li><a href="design.html" class="nav__link">Дизайн</a></li>
+					</ul>
+					<script>
+						const button = document.querySelector('.menu-button');
+						const navList = document.querySelector('.mobile');
+
+						// Add an event listener to the button
+						button.addEventListener('click', () => {
+							// Toggle the 'clicked' class on the button
+							button.classList.toggle('clicked');
+
+							// Toggle the 'show' class on the nav list
+							navList.classList.toggle('show');
+						});
+
+						// Add an event listener to the document
+						document.addEventListener('click', (e) => {
+							// Check if the click is not on the button or the nav list
+							if (!button.contains(e.target) && !navList.contains(e.target)) {
+								// Remove the 'clicked' class from the button
+								button.classList.remove('clicked');
+
+								// Remove the 'show' class from the nav list
+								navList.classList.remove('show');
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="section">
+			<div class="container">
+				<div class="slider">
+					<div class="slider__item">
+						<h1 class="slider__title">10 лет разрабатываем цифровые решения</h1>
+					</div>
+					<div class="slider__item">
+						<div class="slider__container">
+							<input type="radio" name="slider" id="item-1" checked>
+							<input type="radio" name="slider" id="item-2">
+							<input type="radio" name="slider" id="item-3">
+							<div class="cards">
+								<label class="card" for="item-1" id="song-1">
+									<img src="images/slider01.png" alt="img">
+								</label>
+								<label class="card" for="item-2" id="song-2">
+									<img src="images/slider02.png" alt="img">
+								</label>
+								<label class="card" for="item-3" id="song-3">
+									<img src="images/slider03.png" alt="img">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="container--mobile">
+						<div class="slider__item--mobile">
+							<div class="slider__container--mobile">
+								<input type="radio" name="slider--mobile" id="mobile--item-1" checked>
+								<input type="radio" name="slider--mobile" id="mobile--item-2">
+								<input type="radio" name="slider--mobile" id="mobile--item-3">
+								<div class="cards--mobile" style="height: calc(228px * 3 + (40px * 2));width: 100vw;">
+									<label class="card--mobile" for="mobile--item-1" id="mobile--song-1">
+										<img src="images/slider01.png" alt="img">
+									</label>
+									<label class="card--mobile" for="mobile--item-2" id="mobile--song-2">
+										<img src="images/slider02.png" alt="img">
+									</label>
+									<label class="card--mobile" for="mobile--item-3" id="mobile--song-3">
+										<img src="images/slider03.png" alt="img">
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="abs_container">
+			<svg class="abs01 slider__abs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 799">
+				<defs>
+					<linearGradient id="a" x1="-28.23" x2="765.42" y1="856.78" y2="82.63"
+						gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#0ff" stop-opacity=".5">
+							<animate attributeName="stop-color" values="lightblue;green;#00ff7f;lightblue" dur="14s"
+								repeatCount="indefinite" />
+							<animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+								repeatCount="indefinite" />
+						</stop>
+						<stop offset="1" stop-color="#70ff00" />
+					</linearGradient>
+				</defs>
+				<path fill="url(#a)"
+					d="m758.01 644.73-50.54-221.98c-24.62-109.33-42.09-188.29-65.19-241.23-25.07-57.46-57.15-83.19-104.04-83.19-4.1 0-7.63 0-11.28.53C510.99 46.46 487.65 0 432.84 0h-4.1c-31.92 0-55.75 15.97-74.54 50.11h-.9C334.5 15.96 310.67 0 278.75 0h-4.1c-33.07 0-67.28 12.31-94.07 98.86-3.76-.35-7.54-.53-11.32-.53-46.85 0-78.93 25.65-104.04 83.15-23.11 52.9-40.75 131.86-65.2 241.11l-50.58 222.43c-.33 1.68-7.92 41.04 15.43 64.64 5.58 6.36 73.85 80.72 204.39 80.72 32.11.11 64.04-4.76 94.65-14.45 55.94 30.75 123.72 30.75 179.65 0a311 311 0 0 0 94.69 14.45c130.59 0 198.77-74.32 204.39-80.72 25.11-25.24 15.71-63.53 15.38-64.92ZM428.74 20.52h4.1c34.75 0 55.3 22.57 73.85 82.45-24.98 7.84-44.84 25.9-61.83 56.55-15.39-55.65-34.87-94.39-69.09-105.96 14.36-22.98 30.65-33.04 52.96-33.04Zm-154.09 0h4.1c22.32 0 38.61 10.06 52.88 33.04-34.22 11.45-53.7 50.31-69.09 106-17.02-30.7-36.92-48.76-61.78-56.59 18.58-59.88 39.14-82.45 73.93-82.45h-.04ZM27.88 733.01a203.57 203.57 0 0 1-47.71-36.94l-.57-.61c-15.8-15.64-10.09-46.01-10.09-46.05l49.76-218.82.78-3.45C67.38 215.46 89 118.69 169.25 118.69h5.58c-13.54 50.48-25.48 118.24-41.6 209.3L88.59 576.98a498.011 498.011 0 0 0-76.47 36.2c-4.9 2.86-6.55 9.15-3.69 14.04 1.37 2.35 3.62 4.06 6.25 4.75 2.63.69 5.43.31 7.78-1.06a479.9 479.9 0 0 1 139.77-54.38c5.54-1.22 9.05-6.7 7.83-12.24-.58-2.66-2.2-4.98-4.49-6.44a10.278 10.278 0 0 0-7.74-1.39c-15.96 3.49-31.67 7.84-47.1 12.8l38.73-215.38 3.86-21.83c16.41-91.72 28.18-159.6 41.64-209.3 24.62 7.92 42.83 28.73 59.69 67.63-12.31 53.35-23.92 122.22-38.36 209.3l-40.41 239.26v.45c-.21 1.56-4.47 37.8 11.69 66.44a212.786 212.786 0 0 0 53.09 55.61 294.733 294.733 0 0 1-71.47 8.62A279.2 279.2 0 0 1 27.86 733Zm325.87 45.47c-29.4.05-58.29-7.73-83.69-22.53a197.571 197.571 0 0 1-64.7-60.66c-12.31-21.55-9.35-50.89-9.07-53.35l39.75-235.48.57-3.57c14.69-88.36 26.26-158.17 38.85-211.11 19.65-82.69 40.74-117.7 72.86-120.86 3.6-.37 7.23-.37 10.83 0 32.12 3.16 53.33 38.17 72.86 120.82 12.6 53.02 24.2 123.12 38.93 211.6l38.81 230.15c1.79 10.17 2.26 20.53 1.39 30.82a71.761 71.761 0 0 1-8.9 30.78 196.497 196.497 0 0 1-64.86 60.9 165.635 165.635 0 0 1-83.65 22.49Zm374.15-83.15-.57.61c-.62.74-64.86 73.87-189.09 73.87-24.1.06-48.11-2.84-71.51-8.62a213.273 213.273 0 0 0 53.05-55.65 90.458 90.458 0 0 0 11.82-39.56c1.02-12.07.49-24.22-1.6-36.16l-38.28-226.95-.53-3.12c-14.48-87.17-25.97-156.32-38.44-209.63 16.86-38.62 35.28-59.51 59.9-67.35 13.5 49.99 25.56 118.36 41.85 210.78l3.61 20.52 38.77 215.42c-15.47-5.01-31.22-9.36-47.22-12.84-2.66-.58-5.44-.08-7.74 1.39-4.78 3.06-6.16 9.42-3.1 14.19 1.47 2.29 3.79 3.91 6.45 4.49a479.833 479.833 0 0 1 139.69 54.17c1.57.91 3.35 1.39 5.17 1.4 5.67 0 10.26-4.59 10.26-10.26 0-3.65-1.94-7.03-5.09-8.87A504.608 504.608 0 0 0 619.03 577l-40.74-226.7-3.61-20.52C558.52 237.93 546.5 169.73 532.92 119c1.8 0 3.57-.25 5.5-.25 80.29 0 101.87 96.65 149.21 308.37l50.67 222.39c0 .29 6.69 28.93-10.38 45.8ZM453.19 538.31a285.188 285.188 0 0 0-42.67-9.19c-7.18-1.07-14.93-1.93-23.06-2.59-8.19-.66-16.4-1.07-24.62-1.23h-10.21c-10.79 0-21.79.45-32.53 1.31-7.7.59-15.37 1.44-23.01 2.54a288.199 288.199 0 0 0-42.91 9.07c-5.41 1.71-8.41 7.48-6.7 12.89 1.68 5.31 7.29 8.32 12.65 6.77 12.99-3.84 26.25-6.69 39.67-8.54 7.21-1.03 14.44-1.82 21.7-2.38a369.08 369.08 0 0 1 30.93-1.27h10.13c7.75 0 15.59.58 23.26 1.19 7.67.61 14.93 1.4 21.74 2.42 13.41 1.82 26.66 4.68 39.63 8.54.97.28 1.98.42 2.99.41 5.07-.03 9.35-3.75 10.09-8.77.74-5.01-2.29-9.81-7.14-11.3l.04.12Z" />
+			</svg>
+			<svg class="abs02 slider__abs" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 979 220">
+				<defs>
+					<linearGradient id="b" x1="71" x2="874" y1="51" y2="51" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#00D1FF" stop-opacity=".5">
+							<animate attributeName="stop-color" values="red;blue;purple;red" dur="14s"
+								repeatCount="indefinite" />
+							<animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+								repeatCount="indefinite" />
+						</stop>
+						<stop offset="1" stop-color="#C0F" />
+					</linearGradient>
+				</defs>
+				<path stroke="url(#a)" stroke-linecap="round" stroke-width="20"
+					d="M10.5 169.5C38 139 167 10 306 10c170 0 164 199.5 84.5 199.5C306 209.5 483 10 717 10c141 0 230 64.5 252 84" />
+			</svg>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logos">
+				<a href="" class="footer__logo"><img src="images/x.png" alt="x"></a>
+				<a href="" class="footer__logo"><img src="images/instagram.png" alt="insta"></a>
+				<a href="" class="footer__logo"><img src="images/youtube.png" alt="youtube"></a>
+				<a href="" class="footer__logo"><img src="images/linkedIn.png" alt="in"></a>
+				<a href="" class="footer__logo"><img src="images/vk.png" alt="vk"></a>
+			</div>
+
+			<div class="footer__info">
+				<h2 class="footer__title">Кейсы</h2>
+				<a href="#" class="footer__text">Приложения</a>
+				<a href="#" class="footer__text">Сайты</a>
+				<a href="#" class="footer__text">Чат боты</a>
+				<a href="#" class="footer__text">Маркетинг</a>
+				<a href="#" class="footer__text">AI</a>
+			</div>
+			<div class="footer__info">
+				<h2 class="footer__title">Презентации</h2>
+				<a href="#" class="footer__text">Для финтех</a>
+				<a href="#" class="footer__text">Для стартапов</a>
+				<a href="#" class="footer__text">Для CRM система</a>
+				<a href="#" class="footer__text">Для соц сетей </a>
+				<a href="#" class="footer__text">Collaboration features</a>
+			</div>
+			<div class="footer__info">
+				<h2 class="footer__title">Контакты</h2>
+				<a href="#" class="footer__text">Позвонить</a>
+				<a href="#" class="footer__text">Написать</a>
+				<a href="#" class="footer__text">Встретиться</a>
+			</div>
+
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
