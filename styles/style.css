@@ -693,6 +693,8 @@ h4 {
 .apps__titles {
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .apps__title {
@@ -717,5 +719,20 @@ h4 {
 }
 
 .apps__image {
+    width: 270px;
+    height: 585px;
+}
+.apps__image--one {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
+.apps__image--two {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-top: 48px;
 }
