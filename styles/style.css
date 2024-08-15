@@ -349,7 +349,6 @@ label.card {
 }
 
 .abs_container {
-    position: absolute;
     height: 100%;
     top: 0;
     z-index: -1;
@@ -622,3 +621,64 @@ h4 {
     transform: translateY(0rem);
     opacity: 1;
 }
+
+
+/* * sites css */
+
+.sites__title {
+    font-family: Fira Code;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    padding-bottom: 36px;
+}
+
+.sites__discription {
+    font-family: Fira Code;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+}
+
+.sites__item--slides {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 67px;
+    padding-bottom: 500px;
+}
+
+.sites__item--flex {
+    display: flex;
+    gap: 80px;
+}
+
+.sites__slide--image {
+    max-width: 600px;
+    width: 100%;
+    min-height: 400px;
+    object-fit: contain;
+}
+
+.abs_container--slide {
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.abs03 {
+    object-fit: contain;
+    top: 228px;
+    width: 1900px;
+}
+
+.abs04 {
+    top: 950px;
+    object-fit: contain;
+    width: 1900px;
+}
+
+/* * apps css */
+
