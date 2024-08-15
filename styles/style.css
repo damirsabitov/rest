@@ -686,6 +686,13 @@ h4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 110px;
+}
+
+.apps__titles {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .apps__title {
@@ -706,12 +713,9 @@ h4 {
     max-width: 882px;
     width: 100%;
     min-height: 140px;
-    grid-column-start: 1;
-    grid-row-start: 2;
     padding-top: 33px;
 }
 
 .apps__image {
-    grid-column-start: 4;
-    grid-row-end: 2;
+
 }
