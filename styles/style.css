@@ -682,3 +682,36 @@ h4 {
 
 /* * apps css */
 
+.container--apps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+}
+
+.apps__title {
+    font-family: Fira Code;
+    font-weight: 700;
+    font-size: 80px;
+    color: #000;
+    max-width: 580px;
+    width: 100%;
+    min-height: 110px;
+}
+
+.apps__text {
+    font-family: Fira Code;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000;
+    max-width: 882px;
+    width: 100%;
+    min-height: 140px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-top: 33px;
+}
+
+.apps__image {
+    grid-column-start: 4;
+    grid-row-end: 2;
+}
