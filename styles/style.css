@@ -9,6 +9,8 @@
 :root {
     --container-max-width-medium: calc(1200px + (var(--container-padding-inline) * 2));
     --container-padding-inline: 16px;
+    --container-max-width-apps: calc(1300px + (var(--container-padding-inline) * 2));
+    --container-padding-inline-apps: 30px;
 }
 
 html {
@@ -52,6 +54,7 @@ body {
 .nav__logo {
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 11.5px;
     width: min(216px, 100%);
 }
@@ -692,6 +695,9 @@ h4 {
     margin-top: 60px;
     margin-bottom: 110px;
     justify-items: center;
+    margin-inline: auto;
+    max-width: var(--container-max-width-apps);
+    padding-inline: var(--container-padding-inline-apps);
 }
 
 .apps__titles--one {
@@ -985,5 +991,131 @@ h4 {
     background-color: #0094b0;
     color: #ffffff;
 }
+
+.apps__themes--info {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    margin-top: 261px;
+}
+
+.apps__image--nine {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    margin-top: 123px;
+}
+
+.apps__image--ten {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    margin-top: 123px;
+}
+
+.apps__logos {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 254px;
+    border: 1px solid #000;
+    border-radius: 60px;
+    max-width: 890px;
+    width: 100%;
+    max-height: 388px;
+    background-color: #fff;
+}
+
+.apps__logo--images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 48px;
+}
+
+.apps__logo--title {
+    display: flex;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #000;
+    padding: 0 152px;
+}
+
+.apps__developers--title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #000;
+    padding-top: 123px;
+}
+
+.apps__developers--name {
+    display: flex;
+}
+
+.apps__text--absolute-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #000;
+    max-width: 270px;
+    width: 100%;
+    min-height: 154px;
+    margin-top: 34px;
+}
+
+.apps__developers--one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+.apps__developers--two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+.apps__developers--three {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+.apps__developers--four {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+.apps__logo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 424px;
+}
+
 
 /* * apps end */
